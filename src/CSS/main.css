@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.container .container-links {
+  width: 70%;
+  height: 30px;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+  margin: 20px auto;
+  vertical-align: middle;
+  line-height: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.container .container-links .container-links__link {
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+.container .container-links .container-links__link:first-child,
+.container .container-links .container-links__link:nth-child(2) {
+  border-right: 1px solid black;
+}
+.container .container-links a:visited, .container .container-links a:link {
+  color: black;
+}
+.container .container-links .active, .container .container-links .active:visited, .container .container-links .active:link, .container .container-links a:hover {
+  color: #5800FF;
+}
+.container .container-title {
+  font-size: 48px;
+  margin: 20px 0 10px 0;
+  font-family: "Silkscreen", cursive;
+}
+.container .container-description {
+  margin-bottom: 20px;
+  font-family: "Kanit", sans-serif;
+}
+.container .tooltip {
+  transition: all 200ms ease-in-out;
+  position: absolute;
+  z-index: 10;
+  background-color: black;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  padding: 2px;
+}
+.container .container-svg {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.container .container-svg .container-svg__treemap {
+  font-size: 10px;
+  font-weight: 600;
+}
+.container .container-svg .container-svg__treemap .tile {
+  transition: all 200ms ease-in-out;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.container .container-svg .container-svg__treemap .tile:hover {
+  opacity: 0.8;
+}
+.container .container-svg .container-svg__legend {
+  margin: 20px auto 0 auto;
+  font-family: "Kanit", sans-serif;
+}/*# sourceMappingURL=main.css.map */

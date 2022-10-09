@@ -1,0 +1,99 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  
+  .container-links {
+    width: 70%;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    margin: 20px auto;
+    vertical-align: middle;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .container-links__link {
+      text-decoration: none;
+      transition: all 200ms ease-in-out;
+    }
+
+    .container-links__link:first-child,
+    .container-links__link:nth-child(2) {
+      border-right: 1px solid black;
+    }
+
+    a:visited, a:link {
+      color: black;
+    }
+
+    .active, .active:visited, .active:link, a:hover {
+      color: #5800FF;
+    }
+  }
+
+  .container-title {
+    font-size: 48px;
+    margin: 20px 0 10px 0;
+    font-family: 'Silkscreen', cursive;
+  }
+
+  .container-description {
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .tooltip {
+    transition: all 200ms ease-in-out;
+    position: absolute;
+    z-index: 10;
+    background-color: black;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding: 2px;
+  }
+
+  .container-svg {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    .container-svg__treemap {
+      font-size: 10px;
+      font-weight: 600;
+
+      .tile {
+        transition: all 200ms ease-in-out;
+        overflow: hidden;
+        word-wrap: break-word;
+      }
+
+      .tile:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .container-svg__legend {
+      margin: 20px auto 0 auto;
+      font-family: 'Kanit', sans-serif;
+    }
+  }
+}
